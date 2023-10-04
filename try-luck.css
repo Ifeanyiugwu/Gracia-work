@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body {
+    background-color:white;
+    width: 100%;
+}
+.header {
+    position: relative;
+    /* background-color: red; */
+    padding-top: 15ch;
+    padding-bottom: 1ch;
+}
+.navigation {
+    position: absolute;
+    position: fixed;
+    top: 7px;
+    top: 13ch;
+    left: 67ch;
+    float: inline-end;
+}
+.navigation a {
+    margin-left: 6ch;
+    text-decoration-line: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: #435273; */
+    color: #06355c;
+}
+.navigation a.active {
+    color: white;
+    background-color: #06355c;
+    padding-left: 3ch;
+    padding-right: 3ch;
+}
+.navigation a:hover {
+    color: white;
+    background-color: #435273;
+    border-radius: 1ch;
+    padding-left: 3ch;
+    padding-right: 3ch;
+}
+.email {
+    position: absolute;
+    position: fixed;
+    top: 7px;
+    left: 66ch;
+    top: 4ch;
+    text-decoration-line:none;
+    color: #06355c;
+    border: 1px solid;
+    padding-left: 5ch;
+padding-right: 5ch;
+}
+.email:hover {
+    background-color: #435273;
+    color: white;
+    border-radius: 3ch;
+    border: none;
+}
+.email-icon {
+    position:absolute;
+    left:66ch;
+}
+.language {
+    position: absolute;
+    position: fixed;
+    top: 7px;
+    left: 175ch;
+    top: 4ch;
+    color: #435273;
+}
+.btns {
+    position: absolute;
+    position: fixed;
+    top: 7px;
+    left: 123ch;
+    top: 3ch;
+}
+.btn {
+margin-left: 2ch;
+color: #435273;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.btn:hover{
+    background-color: #435273;
+    color: white;
+    border-radius: 4ch;
+}
+.logo {
+    position: absolute;
+    /* position: fixed;
+    top: 7px; */
+    font-size:2ch;
+    width: 25ch;
+    height: 21ch;
+    left: 6ch;
+    top:1ch ;
+}
+.background-image{
+    width: 100%;
+}
