@@ -52,6 +52,7 @@
     padding-left: 5ch;
     padding-right: 5ch;
     transition-delay: calc(4s);
+    cursor:progress;
 }
 .email:hover {
     background-color: #435273;
@@ -70,6 +71,15 @@
     left: 175ch;
     top: 7.2ch;
     color: #435273;
+    padding-top: 2px;
+    border-radius: 1ch, solid blue;
+    background-color: white;
+}
+.lang-blue {
+    color: white;
+    background-color: #435273;
+} {
+
 }
 .btns {
     position: absolute;
@@ -99,7 +109,7 @@ padding-right: 5px;
     height: 21ch;
     left: 6ch;
     top:-2ch ;
-    transition-duration: 3ms;
+    cursor:progress;
 }
 .background-image{
     width: 100%;
@@ -128,13 +138,17 @@ padding-right: 5px;
     color: white;
     font-family: monospace;
     font-size: 50px;
-    left: 10ch;
+    left: 8ch;
 }
 .sub-title {
     position: absolute;
     text-align: center!important;
-    top: 20ch;
+    top: 18ch;
     color: white;
-    left: 10ch;
+    left: 16ch;
     font-size: 25px;
+    line-height: 1.7;
+    /* transform: scale(1.2); */
+    /* transform: translate(0px); */
+    transition: 10s;
 }
