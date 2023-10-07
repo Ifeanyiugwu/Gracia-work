@@ -9,21 +9,20 @@
 }
 .header {
     position: relative;
-    position: fixed;
     /* background-color: red; */
     padding-top: 12ch;
     padding-bottom: 3ch;
 }
 .navigation {
     position: absolute;
-    position: fixed;
-    top: 7px;
-    top: 14ch;
+    top: 16ch;
     left: 33ch;
+    /* position: fixed; */
 }
 .navigation a {
     margin-left: 6ch;
     text-decoration-line: none;
+    top: 18ch;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #06355c;
     transition: 5s;
@@ -43,16 +42,18 @@
 }
 .email {
     position: absolute;
-    position: fixed;
-    left: 73ch;
+    /* position: fixed; */
+    right: 63ch;
     top: 6ch;
     text-decoration-line:none;
-    color: #06355c;
+    color: white;
     border: 1px solid;
     padding-left: 5ch;
     padding-right: 5ch;
     transition-delay: calc(4s);
     cursor:progress;
+    word-spacing: 3ch;
+    margin-right: 2ch;
 }
 .email:hover {
     background-color: #435273;
@@ -66,8 +67,8 @@
 }
 .language {
     position: absolute;
-    position: fixed;
-    top: 7px;
+    /* position: fixed;
+    top: 7px; */
     left: 168ch;
     top: 7ch;
     color: #435273;
@@ -81,8 +82,8 @@
 } 
 .btns {
     position: absolute;
-    position: fixed;
-    top: 7px;
+    /* position: fixed;
+    top: 7px; */
     left: 123ch;
     top: 5.8ch;
 }
@@ -93,8 +94,7 @@ padding-top: 2px;
 padding-bottom: 2px;
 padding-left: 5px;
 padding-right: 5px;
-backface-visibility:hidden;
-transition: all 0.3s ease 0s;
+transition: all 0.7s ease 0s;
 }
 .btn:hover{
     background-color: #435273;
@@ -103,7 +103,7 @@ transition: all 0.3s ease 0s;
 }
 .logo {
     position: absolute;
-    position: fixed;
+    /* position: fixed; */
     font-size:2ch;
     width: 25ch;
     height: 21ch;
@@ -117,38 +117,50 @@ transition: all 0.3s ease 0s;
 }
 .header-guide {
     position: absolute;
-    position: fixed;
-    top: 0px;
+    /* position: fixed;
+    top: 0px; */
     top: 2ch;
     width: 100%;
     height: 8ch;
-    opacity: 0.6;
-    background-color: white;
+    /* opacity: 0.6; */
+    background-color: orange;
 }
 .header-title {
     position: absolute;
     width: 150ch;
     height: 50ch;
-    border: 2px solid white;
+    border: 2px solid orange;
     top: 28ch;
     left: 9ch;
     transition: 10s;
 }
+.radio-bord {
+    position:absolute;
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 3ch;
+    width: 8ch;
+    height: 4ch;
+    padding-left: 7ch;
+    padding-right: 7ch;
+    top: 89ch;
+    left: 66ch;
+}
 .next-page1 {
     position: absolute;
-    left: 80ch;
-    top: 81ch;
+    left: 1.8ch;
+    top: 1ch;
 
 }
 .next-page2 {
     position: absolute;
-    left: 85ch;
-    top: 81ch;
+    left: 7ch;
+    top: 1ch;
 }
 .next-page3 {
     position: absolute;
-    left: 75ch;
-    top: 81ch;
+    left: 12ch;
+    top: 1ch;
 }
 .title {
     position: absolute;
@@ -175,50 +187,53 @@ transition: all 0.3s ease 0s;
     position: absolute;
     height: 10ch;
     width: 25ch;
-    top: 130ch;
-    transition: all 0.3s ease 0s;
+    top: 133ch;
 }
 .main-images-2 {
     position: absolute;
     height: 10ch;
     width: 25ch;
-    top:130ch;
+    top:133ch;
     left: 25ch;
 }
 .main-images-3 {
     position: absolute;
     height: 10ch;
     width: 25ch;
-    top:130ch;
+    top:133ch;
     left: 53ch;
 }
 .main-images-4 {
     position: absolute;
     height: 10ch;
     width: 25ch;
-    top:130ch;
+    top:133ch;
     left: 77ch;
 }
 .main-images-5 {
     position: absolute;
     height: 10ch;
     width: 25ch;
-    top:130ch;
+    top:133ch;
     left: 107ch;
 }
 .main-images-6 {
     position: absolute;
     height: 10ch;
     width: 25ch;
-    top:130ch;
+    top:133ch;
     left: 135ch;
 }
 .container-2 {
     position: absolute;
     width: 100%;
     height:2ch;
-    background-color: #435273;
+    /* background-color: #435273; */
+    background-color: black;
     padding: 35ch;
+    opacity: 0.8;
+    top: 149ch;
+    background-attachment: fixed;
 }
 .line-1 {
     position:absolute;
@@ -231,7 +246,7 @@ transition: all 0.3s ease 0s;
 .line-2 {
     position:absolute;
     top: 12ch;
-    background-color: white;
+    background-color: orange;
     height: 1ch;
     width: 9ch;
     left: 8ch;
@@ -247,7 +262,6 @@ transition: all 0.3s ease 0s;
     top: 14ch;
     color: white;
     left: 5.8ch;
-    /* font-family: monospace; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 4ch;
     font-size: 2.2ch;
@@ -256,8 +270,302 @@ transition: all 0.3s ease 0s;
 position: absolute;
 width: 59ch;
 height: 50ch;
-/* background-color: white; */
-border: 2ch solid white;
+border: 2ch solid orange;
 top: 9ch;
 right: 4ch;
+}
+.bord-2 {
+    position: absolute;
+    width: 45ch;
+    height: 60ch;
+    border: 2ch solid white;
+    top: 2ch;
+    right: 9ch;
+    }
+.image-me {
+position: absolute;
+width: 41ch;
+height: 60ch;
+top: -2ch;
+right: 0ch;
+transition: 5s;
+}
+.image-guide {
+    position: absolute;
+    top: 7ch;
+    right: 15ch;
+}
+/* section 3 */
+
+.greet-image {
+    position: absolute;
+    width: 100%;
+    top: 220ch;
+    height: 70ch;
+    opacity: 0.9;
+}
+.sect-3-title {
+    position: absolute;
+    top: 140ch;
+    color: orange;
+    font-family: monospace;
+    font-size: 25px;
+    left: 35ch;
+    transition: 15s;
+}
+.sect-3-sub-title {
+    position: absolute;
+    top: 72ch;
+    color: white!important;
+    font-family: Arial;
+    font-size: 50px;
+    left: 7ch;
+    /* transition: 15s; */
+}
+.border-line{
+    position: absolute;
+    height: 5ch;
+    width: 1ch;
+    background-color: white;
+    right: 80ch;
+    top: 259ch;
+}
+.para-1 {
+    position: absolute;
+    top: 196ch;
+    color: white;
+    background-color: none;
+    border: 2px solid white;
+    font-family: monospace;
+    font-size: 20px;
+    left: 25ch;
+    padding-left: 2ch;
+    padding-right: 2ch;
+    padding-bottom: 3ch;
+    padding-top: 3ch;
+    /* transition: 15s; */
+}
+.para-2 {
+    position: absolute;
+    top: 196ch;
+    color: white!important;
+    background-color: none;
+    border: 2px solid white;
+    font-family: monospace;
+    font-size: 20px;
+    right: 25ch;
+    padding-left: 2ch;
+    padding-right: 2ch;
+    padding-bottom: 3ch;
+    padding-top: 3ch;
+}
+.twitter-icon {
+    position:absolute;
+    top: 283ch;
+    width: 5ch;
+    height: 5ch;
+    right: 63ch;
+    border: 5px solid white;
+    rotate: calc(60deg);
+}
+.facebook-icon {
+    position:absolute;
+    top: 283ch;
+    width: 5ch;
+    height: 5ch;
+    right: 74.5ch;
+    border: 5px solid orange;
+    rotate: calc(60deg);
+}
+.instagram-icon {
+    position:absolute;
+    top: 283ch;
+    width: 5ch;
+    height: 5ch;
+    right: 86ch;
+    border: 5px solid white;
+    rotate: calc(60deg);
+}
+.cover-border {
+    position: absolute;
+    width: 90%;
+    height: 60ch;
+    left: 9ch;
+    border-radius: 2ch;
+    /* padding-right: 30ch;
+    padding-left: 80ch; */
+    top:316ch;
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+.cover-border h3 {
+    position: absolute;
+    top: 10ch;
+    font-family: monospace;
+    left: 10ch;
+    font-size: larger;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+.cover-border p {
+    position: absolute;
+    top: 15ch;
+    font-family: 'Times New Roman', Times, serif;
+    left: 8ch;
+    font-size: larger;
+    line-height: 4ch;
+    font-style: italic;
+}
+.cover-border h5 {
+    position: absolute;
+    top: 40ch;
+    font-family: 'Times New Roman', Times, serif;
+    left: 8ch;
+    font-size: larger;
+    border-radius: 3ch;
+    padding-left:3ch;
+    padding-right: 3ch;
+    padding-top: 2ch;
+    padding-bottom: 2ch;
+    background-color: black;
+    color: orange;
+}
+.cover-border h5:hover {
+    border-bottom: 2px solid;
+    padding-bottom: 2ch;
+    color: white;
+}
+.cover-border h4 {
+    position: absolute;
+    top: 42ch;
+    font-family: 'Times New Roman', Times, serif;
+    left: 58ch;
+    font-size: larger;
+    color: black;
+    /* text-decoration-line: underline; */
+}
+.cover-border h4:hover {
+    /* text-decoration-line: underline; */
+    border-bottom: 2px solid;
+    padding-bottom: 2ch;
+    color: orange;
+}
+.bording {
+    position: absolute;
+    background-color: white;
+    width: 50ch;
+    height: 80ch;
+    right: 15ch;
+    top:302ch;
+    border-radius: 2ch;
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+.bord-sect {
+    position: absolute;
+    width: 100%;
+    height: 40ch;
+    background-color: black;
+    top: 390ch;
+}
+.bording .circle-image {
+    position: absolute;
+    width: 20ch;
+    height: 20ch;
+    left: 15ch;
+    top:17ch;
+}
+.bording h2 {
+    position: absolute;
+    left: 9.5ch;
+    top: 3ch;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bording p {
+    position: absolute;
+    left: 18ch;
+    top: 12ch;
+    font-weight: lighter;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bord-size {
+    position: absolute;
+    top: 49ch;
+    width: 45ch;
+    height: 1.2ch;
+    left: 3ch;
+    border: 2px solid black; 
+    border-radius: 2ch; 
+}
+.bod-size-2 {
+    position: absolute;
+    top: 49ch;
+    width: 35ch;
+    height: 1ch;
+    left: 3ch;
+    background-color: #06355c;
+    border-radius: 2ch; 
+}
+.bord-size-3 {
+    position: absolute;
+    top: 59ch;
+    width: 45ch;
+    height: 1.2ch;
+    left: 3ch;
+    border: 2px solid black; 
+    border-radius: 2ch; 
+}
+.bod-size-4 {
+    position: absolute;
+    top: 59ch;
+    width: 26ch;
+    height: 1ch;
+    left: 3ch;
+    background-color: green;
+    border-radius: 2ch; 
+}
+.bord-size-5 {
+    position: absolute;
+    top: 70ch;
+    width: 45ch;
+    height: 1.2ch;
+    left: 3ch;
+    border: 2px solid black; 
+    border-radius: 2ch; 
+}
+.bod-size-6 {
+    position: absolute;
+    top: 70ch;
+    width: 43ch;
+    height: 1ch;
+    left: 3ch;
+    background-color: orange;
+    border-radius: 2ch; 
+}
+.Score-Factors {
+    position: absolute;
+    left: 4ch;
+    top: 52ch;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.Exercise-points {
+    position: absolute;
+    left: 4ch;
+    top: 63.5ch;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Stars-collected {
+    position: absolute;
+    left: 4ch;
+    top: 76ch;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.star-1 {
+    position: absolute;
+    top: 65ch;
+    left: 20ch;
+    width: 6ch;
+    height:5ch ;
 }
