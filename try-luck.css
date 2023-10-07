@@ -459,13 +459,6 @@ transition: 5s;
     border-radius: 2ch;
     box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
 }
-.bord-sect {
-    position: absolute;
-    width: 100%;
-    height: 40ch;
-    background-color: black;
-    top: 390ch;
-}
 .bording .circle-image {
     position: absolute;
     width: 20ch;
@@ -568,4 +561,20 @@ transition: 5s;
     left: 20ch;
     width: 6ch;
     height:5ch ;
+}
+/* section 5 */
+
+.bord-sect {
+    position: absolute;
+    width: 100%;
+    height: 40ch;
+    background-color: red;
+    top: 500ch;
+    background-color: rgba(20, 35, 60, 0.1);
+}
+.advert {
+    position: absolute;
+    width: 100%;
+    top: 400ch;
+    border-radius: 3ch;
 }
