@@ -1,0 +1,431 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contain-all {
+    background-color:white;
+    width: 100%;
+    /* overflow:scroll; */
+}
+.header {
+    position: relative;
+    /* background-color: red; */
+    padding-top: 14ch;
+    padding-bottom: 6ch;
+}
+.hero-image{
+    width: 100%;
+    padding-bottom: 40ch;
+}
+.header-guide-1 {
+    position: absolute;
+    top: 2ch;
+    width: 100%;
+    height: 8ch;
+    background-color: orange;
+}
+.navigation {
+    position: absolute;
+    top: 16ch;
+    left: 64ch
+    /* position: fixed; */
+}
+.navigation a {
+    margin-left: 9ch;
+    text-decoration-line: none;
+    top: 18ch;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #06355c;
+    border: 1px solid #06355c;
+    transition: 2s;
+}
+.navigation a.active {
+    color: #06355c;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    border-radius: 3ch;
+}
+.navigation a.activate {
+    color: white;
+    background-color: #06355c;
+    border-radius: 1ch;
+    padding-left: 3ch;
+    padding-right: 3ch;
+}
+.navigation a:hover {
+    color: #435273;
+    background-color: white;
+    border-radius: 1ch;
+    padding-left: 3ch;
+    padding-right: 3ch;
+}
+.email {
+    position: absolute;
+    /* position: fixed; */
+    right: 63ch;
+    top: 6ch;
+    text-decoration-line:none;
+    color: white;
+    border: 1px solid;
+    padding-left: 5ch;
+    padding-right: 5ch;
+    transition-delay: calc(4s);
+    cursor:progress;
+    word-spacing: 3ch;
+    margin-right: 2ch;
+}
+.email-icon {
+    position:absolute;
+    left:66ch;
+}
+.language {
+    position: absolute;
+    left: 158ch;
+    top: 12ch;
+    color: #435273;
+    padding-top: 2px;
+    border-radius: 1ch, solid blue;
+    background-color: white;
+}
+.lang-blue {
+    color: white;
+    background-color: #435273;
+} 
+.btns {
+    position: absolute;
+    left: 123ch;
+    top: 5.8ch;
+}
+.btn {
+margin-left: 2ch;
+color: #435273;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 5px;
+padding-right: 5px;
+transition: all 0.7s ease 0s;
+}
+.btn:hover{
+    background-color: #435273;
+    color: white;
+    border-radius: 4ch;
+}
+.logo {
+    position: absolute;
+    font-size:2ch;
+    width: 25ch;
+    height: 21ch;
+    left: 6ch;
+    top:-2ch ;
+    cursor:progress;
+}
+.header-title-about {
+    position: absolute;
+    width: 30%;
+    height: 30ch;
+    /* border: 2px solid white; */
+    top: 32ch;
+    left: 64ch;
+    transition: 10s;
+}
+.header-title-about h1 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 40px;
+    left: 5ch;
+    color: white!important;
+    font-family:'Poppins', sans-serif;
+}
+.header-title-about .link-about {
+    position: absolute;
+    left: 11ch;
+    color: white;
+    text-decoration-line: none;
+}
+.header-title-about a{
+    position: absolute;
+    top: 8ch;
+    left: 18ch;
+    color: white;
+    text-decoration-line: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-title-about .link-about:hover {
+    color: orange;
+    
+}
+
+
+/* section 2 */
+.contain-form{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 97ch;
+    height: 80ch;
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+.login-image {
+position: absolute;
+left: 30ch;
+top: 20ch;
+}
+.login-sub-text {
+    position: absolute;
+    top: 44ch;
+    left: 35ch;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.form {
+    position: absolute;
+    background-color: #06355c;
+    top: 4ch;
+    width: 50ch;
+    height: 74ch;
+    right: 15ch;
+border-top-right-radius: 6ch;
+    border: 2ch solid white;
+}
+.form legend{
+    position: absolute;
+    top: 15ch;
+    left: 8ch;
+    color: white;
+    border-top-right-radius: 6ch;
+    padding-right: 7ch;
+    padding-left: 7ch;
+    background-color: none;
+    border: 1ch solid white;
+}
+.Log {
+    position: absolute;
+    background-color: #06355c;
+    color: white;
+    padding-left: 7ch;
+    padding-right: 7ch;
+    border-top-right-radius: 6ch;
+    left: 13ch;
+    top: 50ch;
+    border: 5px solid white;
+    text-decoration-line: none;
+}
+.Log:hover {
+background-color: white;
+color: #06355c;
+}
+.checkbox {
+position: absolute;
+top: 41ch;
+left: 5ch;
+}
+.input-other  {
+    position: absolute;
+top: 27ch;
+left: 8ch;
+width: 30ch;
+padding-bottom: 2ch;
+border-top-right-radius: 4ch;
+background-color: white;
+}
+.input-other-2 {
+position: absolute;
+top: 35ch;
+left: 8ch;
+width: 30ch;
+padding-bottom: 2ch;
+border-top-right-radius: 4ch;
+background-color: white;
+}
+
+
+/* section 3 */
+
+.footer-body {
+    position: absolute;
+    background-attachment: fixed;
+    top: 200ch;
+    width: 100%;
+    height: 90ch;
+    background-color: #06355c;
+    }
+    .footer-cover {
+        position: absolute;
+        width: 40ch;
+        left: 47ch;
+        height: 30ch;
+        /* background-color: black; */
+        top: 13ch;
+    }
+    .footer-cover h3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 3px;
+    top: 2ch;
+    left: 5ch;
+    font-size: 30px;
+    }
+    .footer-body .footer-logo {
+        position: absolute;
+        left: -40ch;
+        top: 4ch;
+        height: 20ch;
+        width: 30ch;
+        background-color: white;
+    }
+    .footer-cover p {
+    position:absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 3ch;
+    top: 8ch;
+    left: 2ch;
+    }
+    .footer-cover .footer-icon {
+        position: absolute;
+        left: 3.3ch;
+        top: 4ch;
+    }
+    .footer-cover-2 {
+        position: absolute;
+        width: 40ch;
+        left: 103ch;
+        height: 30ch;
+        /* background-color: black; */
+        top: 13ch;
+    }
+    .footer-cover-2 p {
+        position:absolute;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 3ch;
+        top: 8ch;
+        left: 2ch;
+        }
+        .footer-cover-2 .footer-icon {
+            position: absolute;
+            left: 3.2ch;
+            top: 4ch;
+        }
+        .footer-cover-2 h3 {
+            position: absolute;
+            background-color: white;
+            border-radius: 3px;
+            top: 2ch;
+            left: 5ch;
+            font-size: 30px;
+            }
+    
+    .footer-cover-3 {
+        position: absolute;
+        width: 42ch;
+        left: 47ch;
+        height: 25ch;
+        /* background-color: black; */
+        top: 52ch;
+    }
+    .footer-cover-3 h3 {
+                position: absolute;
+                background-color: white;
+                border-radius: 3px;
+                top: 2ch;
+                left: 5ch;
+                font-size: 30px;
+    }
+                .footer-cover-3 p {
+                position:absolute;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                line-height: 3ch;
+                top: 8ch;
+                left: 2ch;
+                }
+    .footer-cover-3 .footer-icon {
+    position: absolute;
+    left: 3.3ch;
+    top: 4ch;
+    }
+    .footer-cover-4 {
+        position: absolute;
+        width: 40ch;
+        left: 105ch;
+        height: 30ch;
+        /* background-color: black; */
+        top: 55ch;
+    }
+    .footer-cover-4 h3 {
+        position: absolute;
+        color: white;
+        border-radius: 3px;
+        top: 1.2ch;
+        left: 5ch;
+        font-size: 20px;
+    }
+    .footer-cover-4 p {
+        position:absolute;
+        color: orange;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 3ch;
+        text-decoration-line: underline;
+        top: 10ch;
+        left: 5ch;
+        }
+        .footer-cover-4 p:hover{
+            color: white;
+        }
+    .footer-cover-4 .footer-icon-calling  {
+        position:absolute;
+        top: 13ch;
+        left: 2ch;
+    }
+    .footer-cover-4 .footer-icon-location  {
+        position:absolute;
+        top: 2.5ch;
+        left: 2ch;
+    }
+    .footer-cover-5 {
+        position: absolute;
+        width: 42ch;
+        left: 7ch;
+        height: 25ch;
+        /* background-color: black; */
+        top: 52ch;
+    }
+    .footer-cover-5 h3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 3px;
+    top: 2ch;
+    left: 1.2ch;
+    font-size: 30px;
+    }
+    .footer-cover-5 p {
+    position:absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 3ch;
+    top: 8ch;
+    left: 2ch;
+    }
+    .footer-line{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: orange;
+        top: 82ch;
+    }
+    .footer-cover-6 h5 {
+        position: absolute;
+        top: 67ch;
+        color: orange;
+        height: 2px;
+        left: 38ch;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }

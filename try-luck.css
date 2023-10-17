@@ -6,6 +6,7 @@
 .body {
     background-color:white;
     width: 100%;
+    /* overflow:scroll; */
 }
 .header {
     position: relative;
@@ -16,11 +17,11 @@
 .navigation {
     position: absolute;
     top: 16ch;
-    left: 33ch;
+    left: 64ch;
     /* position: fixed; */
 }
 .navigation a {
-    margin-left: 6ch;
+    margin-left: 9ch;
     text-decoration-line: none;
     top: 18ch;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -32,6 +33,13 @@
     padding-left: 1ch;
     padding-right: 1ch;
     border-radius: 3ch;
+}
+.navigation a.activated {
+    color: white;
+    background-color: #06355c;
+    border-radius: 1ch;
+    padding-left: 3ch;
+    padding-right: 3ch;
 }
 .navigation a:hover {
     color: #435273;
@@ -67,8 +75,8 @@
 }
 .language {
     position: absolute;
-    left: 168ch;
-    top: 7ch;
+    left: 158ch;
+    top: 12ch;
     color: #435273;
     padding-top: 2px;
     border-radius: 1ch, solid blue;
@@ -80,7 +88,6 @@
 } 
 .btns {
     position: absolute;
-
     left: 123ch;
     top: 5.8ch;
 }
@@ -107,23 +114,40 @@ transition: all 0.7s ease 0s;
     top:-2ch ;
     cursor:progress;
 }
-.background-image{
+.mySlides {
+    /* position: absolute;
+    top: 8ch; */
     width: 100%;
-    padding-bottom: 40ch;
+    right: 8ch;
+    height: 70%;
+}
+@keyframes main-images {
+from {
+    transform: translateZ(-600px);
+}
+to {
+    transform:translate3d(-900px)
+}
+}
+.main-images{
+    animation-name: main-images;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    transform: translateX(350px);
 }
 .header-guide {
     position: absolute;
-    /* position: fixed;
-    top: 0px; */
     top: 2ch;
     width: 100%;
     height: 8ch;
-    /* opacity: 0.6; */
     background-color: orange;
 }
 .header-title {
     position: absolute;
-    width: 150ch;
+    width: 90%;
     height: 50ch;
     border: 2px solid orange;
     top: 37ch;
@@ -164,7 +188,7 @@ transition: all 0.7s ease 0s;
     color: white;
     font-family: monospace;
     font-size: 50px;
-    left: 8ch;
+    left: 6ch;
     transition: 15s;
 }
 .sub-title {
@@ -172,69 +196,70 @@ transition: all 0.7s ease 0s;
     text-align: center!important;
     top: 18ch;
     color: white;
-    left: 16ch;
+    left: 14ch;
     font-size: 25px;
     line-height: 1.7;
     transition: 30s;
 }
 /* section 2 */
 
+.main-images {
+    position: absolute;
+    height: 10ch;
+    width: 1ch;
+    top: 2ch;
+    left: 12ch;
+}
 .main-images-1 {
     position: absolute;
     height: 10ch;
-    width: 25ch;
+    /* width: 25ch; */
     top: 133ch;
 }
 .main-images-2 {
     position: absolute;
     height: 10ch;
-    width: 25ch;
+    /* width: 25ch; */
     top:133ch;
-    left: 25ch;
+    left: 20ch;
 }
 .main-images-3 {
     position: absolute;
     height: 10ch;
-    width: 25ch;
+    /* width: 25ch; */
     top:133ch;
-    left: 53ch;
+    left: 48ch;
 }
 .main-images-4 {
     position: absolute;
     height: 10ch;
-    width: 25ch;
+    /* width: 25ch; */
     top:133ch;
-    left: 77ch;
-}
-.main-images-5 {
-    position: absolute;
-    height: 10ch;
-    width: 25ch;
-    top:133ch;
-    left: 107ch;
+    left: 70ch;
 }
 .main-images-6 {
     position: absolute;
     height: 10ch;
-    width: 25ch;
+    /* width: 25ch; */
     top:133ch;
-    left: 135ch;
+    left: 96ch;
 }
 .container-2 {
     position: absolute;
     width: 100%;
     height:2ch;
     /* background-color: #435273; */
-    background-color: black;
+    background-color: white;
     padding: 35ch;
     opacity: 0.8;
     top: 149ch;
     background-attachment: fixed;
+    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
 }
 .line-1 {
     position:absolute;
     top: 9ch;
-    background-color: white;
+    background-color: #06355c;
     height: 1ch;
     width: 2ch;
     left: 15.0ch;
@@ -242,7 +267,7 @@ transition: all 0.7s ease 0s;
 .line-2 {
     position:absolute;
     top: 12ch;
-    background-color: orange;
+    background-color: #06355c;
     height: 1ch;
     width: 9ch;
     left: 8ch;
@@ -250,13 +275,13 @@ transition: all 0.7s ease 0s;
 .text {
     position:absolute;
     top: 5ch;
-    color: white;
+    color: #06355c;
     left: 11ch;
 }
 .under-text {
     position:absolute;
     top: 14ch;
-    color: white;
+    color: #06355c;
     left: 5.8ch;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 4ch;
@@ -266,7 +291,7 @@ transition: all 0.7s ease 0s;
 position: absolute;
 width: 59ch;
 height: 50ch;
-border: 2ch solid orange;
+border: 2ch solid #06355c;
 top: 9ch;
 right: 4ch;
 }
@@ -306,7 +331,7 @@ transition: 5s;
     color: orange;
     font-family: monospace;
     font-size: 25px;
-    left: 35ch;
+    left: 30ch;
     transition: 15s;
 }
 .sect-3-sub-title {
@@ -725,7 +750,7 @@ width: 100%;
 height: 90ch;
 background-color: none;
 /* border: 1px solid black; */
-top: 630ch;
+top: 620ch;
 box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
 }
 .bord-cover {
@@ -781,7 +806,6 @@ box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
     width: 68ch;
     letter-spacing: 1.5ch;
     color: #06355c;
-    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
     word-spacing: 2ch;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -871,54 +895,318 @@ top: 0ch;
 
 /* two-border */
 
-.second-container-body {
-    position: absolute;
-    width: 100%;
-    height: 150ch;
-    top: 810ch;
-    box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
-}
 .cover-me-4 {
-position: absolute;
-width: 50ch;
-height: 60ch;
-left: 5ch;
-}
-.second-container-body h3{
     position: absolute;
     width: 50ch;
     height: 60ch;
-    top: 5ch;
+    left: 5ch;
+    top: 80ch;
+}
+.cover-me-4 h3 {
+    position:absolute;
+    left: 30ch;
+    top: 3ch;
+    width: 68ch;
     letter-spacing: 1.5ch;
-    left: 45ch;
     color: #06355c;
-}
-.second-container-body h1{
-    position: absolute;
-    top: 51ch;
-    left:23ch;
-    font-size: 20px;
-    color: #06355c;
-}
-.second-container-body .kingsley {
-    position: absolute;
-    top: 42ch;
-    left:17ch;
-    letter-spacing: 2px;
-    color: orange;
-    font-family: cursive;
+    word-spacing: 2ch;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .cover-me-5 {
     position: absolute;
     width: 50ch;
     height: 60ch;
     left: 52ch;
-    }
+    top: 80ch;
+}
+.cover-me-6 {
+    position: absolute;
+    width: 50ch;
+    height: 60ch;
+    right: 19ch;
+    top: 80ch;
+}
+.cover-me-7 {
+    position: absolute;
+    width: 50ch;
+    height: 60ch;
+    left: 5ch;
+    top: 145ch;
+}
+.cover-me-8 {
+    position: absolute;
+    width: 50ch;
+    height: 60ch;
+    left: 52ch;
+    top: 145ch;
+}
+.cover-me-9 {
+    position: absolute;
+    width: 50ch;
+    height: 60ch;
+    left: 52ch;
+    top: 145ch;
+}
+.cover-me-10 {
+    position: absolute;
+    width: 50ch;
+    height: 60ch;
+    right: 19ch;
+    top: 145ch;
+}
+/* section 9 */
 
-    .cover-me-6 {
+.ninth-div .loging-pic {
+    position:absolute;
+    top:940ch;
+    width: 100%;
+}
+.form {
+    position: absolute;
+    background-color: #06355c;
+    top: 950ch;
+    width: 50ch;
+    height: 74ch;
+    right: 15ch;
+border-top-right-radius: 6ch;
+    border: 2ch solid white;
+}
+.form legend{
+    position: absolute;
+    top: 15ch;
+    left: 8ch;
+    color: white;
+    border-top-right-radius: 6ch;
+    padding-right: 7ch;
+    padding-left: 7ch;
+    background-color: none;
+    border: 1ch solid white;
+}
+.Log {
+    position: absolute;
+    background-color: #06355c;
+    color: white;
+    padding-left: 7ch;
+    padding-right: 7ch;
+    border-top-right-radius: 6ch;
+    left: 13ch;
+    top: 50ch;
+    border: 5px solid white;
+    text-decoration-line: none;
+}
+.Log:hover {
+background-color: white;
+color: #06355c;
+}
+.checkbox {
+position: absolute;
+top: 41ch;
+left: 5ch;
+}
+.input-other  {
+    position: absolute;
+top: 27ch;
+left: 8ch;
+width: 30ch;
+padding-bottom: 2ch;
+border-top-right-radius: 4ch;
+background-color: white;
+}
+.input-other-2 {
+position: absolute;
+top: 35ch;
+left: 8ch;
+width: 30ch;
+padding-bottom: 2ch;
+border-top-right-radius: 4ch;
+background-color: white;
+}
+
+/* section 10 */
+
+.footer-body {
+position: absolute;
+top: 1020ch;
+width: 100%;
+height: 90ch;
+background-color: #06355c;
+}
+.footer-cover {
+    position: absolute;
+    width: 40ch;
+    left: 47ch;
+    height: 30ch;
+    /* background-color: black; */
+    top: 13ch;
+}
+.footer-cover h3 {
+position: absolute;
+background-color: white;
+border-radius: 3px;
+top: 2ch;
+left: 5ch;
+font-size: 30px;
+}
+.footer-body .footer-logo {
+    position: absolute;
+    left: -40ch;
+    top: 4ch;
+    height: 20ch;
+    width: 30ch;
+    background-color: white;
+}
+.footer-cover p {
+position:absolute;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+line-height: 3ch;
+top: 8ch;
+left: 2ch;
+}
+.footer-cover .footer-icon {
+    position: absolute;
+    left: 3.3ch;
+    top: 4ch;
+}
+.footer-cover-2 {
+    position: absolute;
+    width: 40ch;
+    left: 103ch;
+    height: 30ch;
+    /* background-color: black; */
+    top: 13ch;
+}
+.footer-cover-2 p {
+    position:absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 3ch;
+    top: 8ch;
+    left: 2ch;
+    }
+    .footer-cover-2 .footer-icon {
         position: absolute;
-        width: 50ch;
-        height: 60ch;
-        left: 98.5ch;
+        left: 3.2ch;
+        top: 4ch;
+    }
+    .footer-cover-2 h3 {
+        position: absolute;
+        background-color: white;
+        border-radius: 3px;
+        top: 2ch;
+        left: 5ch;
+        font-size: 30px;
         }
 
+.footer-cover-3 {
+    position: absolute;
+    width: 42ch;
+    left: 47ch;
+    height: 25ch;
+    /* background-color: black; */
+    top: 52ch;
+}
+.footer-cover-3 h3 {
+            position: absolute;
+            background-color: white;
+            border-radius: 3px;
+            top: 2ch;
+            left: 5ch;
+            font-size: 30px;
+}
+            .footer-cover-3 p {
+            position:absolute;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            line-height: 3ch;
+            top: 8ch;
+            left: 2ch;
+            }
+.footer-cover-3 .footer-icon {
+position: absolute;
+left: 3.3ch;
+top: 4ch;
+}
+.footer-cover-4 {
+    position: absolute;
+    width: 40ch;
+    left: 105ch;
+    height: 30ch;
+    /* background-color: black; */
+    top: 55ch;
+}
+.footer-cover-4 h3 {
+    position: absolute;
+    color: white;
+    border-radius: 3px;
+    top: 1.2ch;
+    left: 5ch;
+    font-size: 20px;
+}
+.footer-cover-4 p {
+    position:absolute;
+    color: orange;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 3ch;
+    text-decoration-line: underline;
+    top: 10ch;
+    left: 5ch;
+    }
+    .footer-cover-4 p:hover{
+        color: white;
+    }
+.footer-cover-4 .footer-icon-calling  {
+    position:absolute;
+    top: 13ch;
+    left: 2ch;
+}
+.footer-cover-4 .footer-icon-location  {
+    position:absolute;
+    top: 2.5ch;
+    left: 2ch;
+}
+.footer-cover-5 {
+    position: absolute;
+    width: 42ch;
+    left: 7ch;
+    height: 25ch;
+    /* background-color: black; */
+    top: 52ch;
+}
+.footer-cover-5 h3 {
+position: absolute;
+background-color: white;
+border-radius: 3px;
+top: 2ch;
+left: 1.2ch;
+font-size: 30px;
+}
+.footer-cover-5 p {
+position:absolute;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+line-height: 3ch;
+top: 8ch;
+left: 2ch;
+}
+.footer-line{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: orange;
+    top: 82ch;
+}
+.footer-cover-6 h5 {
+    position: absolute;
+    top: 67ch;
+    color: orange;
+    height: 2px;
+    left: 38ch;
+    letter-spacing: 3px;
+    font-size: 20px;
+}

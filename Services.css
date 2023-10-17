@@ -1,0 +1,617 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contain-all {
+    background-color:white;
+    width: 100%;
+    /* overflow:scroll; */
+}
+.header {
+    position: relative;
+    /* background-color: red; */
+    padding-top: 14ch;
+    padding-bottom: 6ch;
+}
+.hero-image{
+    width: 100%;
+    padding-bottom: 40ch;
+}
+.header-guide-1 {
+    position: absolute;
+    top: 2ch;
+    width: 100%;
+    height: 8ch;
+    background-color: orange;
+}
+.navigation {
+    position: absolute;
+    top: 16ch;
+    left: 64ch
+    /* position: fixed; */
+}
+.navigation a {
+    margin-left: 9ch;
+    text-decoration-line: none;
+    top: 18ch;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #06355c;
+    border: 1px solid #06355c;
+    transition: 2s;
+}
+.navigation a.active {
+    color: #06355c;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    border-radius: 3ch;
+}
+.navigation a.activate {
+    color: white;
+    background-color: #06355c;
+    border-radius: 1ch;
+    padding-left: 3ch;
+    padding-right: 3ch;
+}
+.navigation a:hover {
+    color: #435273;
+    background-color: white;
+    border-radius: 1ch;
+    padding-left: 3ch;
+    padding-right: 3ch;
+}
+.email {
+    position: absolute;
+    /* position: fixed; */
+    right: 63ch;
+    top: 6ch;
+    text-decoration-line:none;
+    color: white;
+    border: 1px solid;
+    padding-left: 5ch;
+    padding-right: 5ch;
+    transition-delay: calc(4s);
+    cursor:progress;
+    word-spacing: 3ch;
+    margin-right: 2ch;
+}
+.email-icon {
+    position:absolute;
+    left:66ch;
+}
+.language {
+    position: absolute;
+    left: 158ch;
+    top: 12ch;
+    color: #435273;
+    padding-top: 2px;
+    border-radius: 1ch, solid blue;
+    background-color: white;
+}
+.lang-blue {
+    color: white;
+    background-color: #435273;
+} 
+.btns {
+    position: absolute;
+    left: 123ch;
+    top: 5.8ch;
+}
+.btn {
+margin-left: 2ch;
+color: #435273;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-left: 5px;
+padding-right: 5px;
+transition: all 0.7s ease 0s;
+}
+.btn:hover{
+    background-color: #435273;
+    color: white;
+    border-radius: 4ch;
+}
+.logo {
+    position: absolute;
+    font-size:2ch;
+    width: 25ch;
+    height: 21ch;
+    left: 6ch;
+    top:-2ch ;
+    cursor:progress;
+}
+.header-title-services {
+    position: absolute;
+    width: 30%;
+    height: 30ch;
+    /* border: 2px solid white; */
+    top: 32ch;
+    left: 64ch;
+    transition: 10s;
+}
+.header-title-services h1 {
+    position: absolute;
+    font-weight: 700;
+    font-size: 40px;
+    left: 4ch;
+    color: white!important;
+    font-family:'Poppins', sans-serif;
+}
+.header-title-services .link-services {
+    position: absolute;
+    left: 11ch;
+    color: white;
+    text-decoration-line: none;
+}
+.header-title-services a{
+    position: absolute;
+    top: 8ch;
+    left: 17.5ch;
+    color: white;
+    text-decoration-line: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-title-services .link-services:hover {
+    color: orange;
+    
+}
+
+/* section 2 */
+
+.bord-sect {
+    position: absolute;
+    width: 100%;
+    height: 40ch;
+    top: 90ch;
+    /* background-color: rgba(20, 35, 60, 0.1); */
+    background-color: white;
+    padding-bottom: 80ch;
+}
+.texts-h2 {
+    position: absolute;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    left: 9ch;
+    line-height: 4ch;
+    color: #06355c;
+}
+.texts-h2 p {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 0ch;
+    top: 11ch;
+    color: #06355c;
+}
+.bord-sect h3 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 16ch;
+    top: 32ch;
+    color: #06355c;
+}
+.bord-sect-icon {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 10.3ch;
+    top: 39ch;
+}
+.second-sub-text {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 20ch;
+    top: 45ch;
+    line-height: 4ch;
+    color: #06355c;
+}
+.bord-sect-2 {
+    position: absolute;
+    left: 0ch;
+    top: 130ch;
+    width: 80rem;
+    color: #06355c;
+}
+.second-sec-2 h3 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 56ch;
+    top: 33ch;
+    color: #06355c;
+}
+.second-sec-2 .bord-sect-icon-2 {
+    position: absolute;
+    left: 66ch;
+    top: 44.5ch;
+    rotate: calc(60deg);
+}
+.second-sec-2 .second-sub-text-2 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 70ch;
+    top: 45ch;
+    line-height: 4ch;
+    color: #06355c;
+}
+.third-sec-3 h3 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 94ch;
+    top: 33ch;
+}
+.third-sec-3 .bord-sect-icon-3 {
+    position: absolute;
+    left: 115ch;
+    top: 45ch;
+    /* rotate: calc(60deg); */
+}
+.third-sec-3 .second-sub-text-3 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 117ch;
+    top: 45ch;
+    line-height: 4ch;
+    color: #06355c;
+}
+.bord-sect-2 h3 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 16ch;
+    top: 32ch;
+}
+.bord-sect-icon-4 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 10.3ch;
+    top: 39ch;
+}
+.fourth-sub-text-4 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 20ch;
+    top: 45ch;
+    line-height: 4ch;
+}
+.fifth-sec-5 h3 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 56ch;
+    top: 33ch;
+}
+.fifth-sec-5 .bord-sect-icon-5 {
+    position: absolute;
+    left: 66ch;
+    top: 44.5ch;
+    rotate: calc(60deg);
+}
+.fifth-sec-5 .second-sub-text-5 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 70ch;
+    top: 45ch;
+    line-height: 4ch;
+}
+.third-sec-6 h3 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 94ch;
+    top: 33ch;
+}
+.third-sec-6 .bord-sect-icon-6 {
+    position: absolute;
+    left: 115ch;
+    top: 45ch;
+    /* rotate: calc(60deg); */
+}
+.third-sec-6 .second-sub-text-6 {
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 117ch;
+    top: 45ch;
+    line-height: 4ch;
+}
+
+/* section 3 */
+
+.sub-sub-title {
+    position: absolute;
+    top:79ch;
+    color: #06355c;
+    left: 4ch;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 3px 3px 3px #06355c;
+    font-family: 'Trebuchet MS';
+}
+.sub-title-sec {
+position: absolute;
+top: 143ch;
+left: 37ch;
+color: #06355c;
+font-size: 20px;
+font-family: 'Trebuchet MS';
+}
+
+.fourth-border-cover {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 110ch;
+background-color: white;
+width: 100%;
+font-family: 'Trebuchet MS';
+height: 60ch;
+box-shadow: 0 5px 25px rgba(20, 35, 60, 0.1);
+}
+.Our-Expertise-All {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10ch;
+    font-family: 'Trebuchet MS';
+    padding-left: 3ch;
+padding-right: 3ch;
+padding-top: 2ch;
+padding-bottom: 2ch;
+border: 5px solid orange;
+}
+.fourth-border-cover-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -40ch;
+    width: 100%;
+    height: 60ch;
+}
+.fourth-border a {
+    text-decoration-line: none;
+}
+.fourth-border a:hover {
+color: orange;
+}
+
+/* section 4 */
+
+.footer-body {
+    position: absolute;
+    top: 300ch;
+    width: 100%;
+    height: 90ch;
+    background-color: #06355c;
+    }
+    .footer-cover {
+        position: absolute;
+        width: 40ch;
+        left: 47ch;
+        height: 30ch;
+        /* background-color: black; */
+        top: 13ch;
+    }
+    .footer-cover h3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 3px;
+    top: 2ch;
+    left: 5ch;
+    font-size: 30px;
+    }
+    .footer-body .footer-logo {
+        position: absolute;
+        left: -40ch;
+        top: 4ch;
+        height: 20ch;
+        width: 30ch;
+        background-color: white;
+    }
+    .footer-cover p {
+    position:absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 3ch;
+    top: 8ch;
+    left: 2ch;
+    }
+    .footer-cover .footer-icon {
+        position: absolute;
+        left: 3.3ch;
+        top: 4ch;
+    }
+    .footer-cover-2 {
+        position: absolute;
+        width: 40ch;
+        left: 103ch;
+        height: 30ch;
+        /* background-color: black; */
+        top: 13ch;
+    }
+    .footer-cover-2 p {
+        position:absolute;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 3ch;
+        top: 8ch;
+        left: 2ch;
+        }
+        .footer-cover-2 .footer-icon {
+            position: absolute;
+            left: 3.2ch;
+            top: 4ch;
+        }
+        .footer-cover-2 h3 {
+            position: absolute;
+            background-color: white;
+            border-radius: 3px;
+            top: 2ch;
+            left: 5ch;
+            font-size: 30px;
+            }
+    
+    .footer-cover-3 {
+        position: absolute;
+        width: 42ch;
+        left: 47ch;
+        height: 25ch;
+        /* background-color: black; */
+        top: 52ch;
+    }
+    .footer-cover-3 h3 {
+                position: absolute;
+                background-color: white;
+                border-radius: 3px;
+                top: 2ch;
+                left: 5ch;
+                font-size: 30px;
+    }
+                .footer-cover-3 p {
+                position:absolute;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                line-height: 3ch;
+                top: 8ch;
+                left: 2ch;
+                }
+    .footer-cover-3 .footer-icon {
+    position: absolute;
+    left: 3.3ch;
+    top: 4ch;
+    }
+    .footer-cover-4 {
+        position: absolute;
+        width: 40ch;
+        left: 105ch;
+        height: 30ch;
+        /* background-color: black; */
+        top: 55ch;
+    }
+    .footer-cover-4 h3 {
+        position: absolute;
+        color: white;
+        border-radius: 3px;
+        top: 1.2ch;
+        left: 5ch;
+        font-size: 20px;
+    }
+    .footer-cover-4 p {
+        position:absolute;
+        color: orange;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 3ch;
+        text-decoration-line: underline;
+        top: 10ch;
+        left: 5ch;
+        }
+        .footer-cover-4 p:hover{
+            color: white;
+        }
+    .footer-cover-4 .footer-icon-calling  {
+        position:absolute;
+        top: 13ch;
+        left: 2ch;
+    }
+    .footer-cover-4 .footer-icon-location  {
+        position:absolute;
+        top: 2.5ch;
+        left: 2ch;
+    }
+    .footer-cover-5 {
+        position: absolute;
+        width: 42ch;
+        left: 7ch;
+        height: 25ch;
+        /* background-color: black; */
+        top: 52ch;
+    }
+    .footer-cover-5 h3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 3px;
+    top: 2ch;
+    left: 1.2ch;
+    font-size: 30px;
+    }
+    .footer-cover-5 p {
+    position:absolute;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 3ch;
+    top: 8ch;
+    left: 2ch;
+    }
+    .footer-line{
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: orange;
+        top: 82ch;
+    }
+    .footer-cover-6 h5 {
+        position: absolute;
+        top: 67ch;
+        color: orange;
+        height: 2px;
+        left: 38ch;
+        letter-spacing: 3px;
+        font-size: 20px;
+    }
+    .form {
+        position: absolute;
+        background-color: #06355c;
+        top: 950ch;
+        width: 50ch;
+        height: 74ch;
+        right: 15ch;
+    border-top-right-radius: 6ch;
+        border: 2ch solid white;
+    }
+    .form legend{
+        position: absolute;
+        top: 15ch;
+        left: 8ch;
+        color: white;
+        border-top-right-radius: 6ch;
+        padding-right: 7ch;
+        padding-left: 7ch;
+        background-color: none;
+        border: 1ch solid white;
+    }
+    .Log {
+        position: absolute;
+        background-color: #06355c;
+        color: white;
+        padding-left: 7ch;
+        padding-right: 7ch;
+        border-top-right-radius: 6ch;
+        left: 13ch;
+        top: 50ch;
+        border: 5px solid white;
+        text-decoration-line: none;
+    }
+    .Log:hover {
+    background-color: white;
+    color: #06355c;
+    }
+    .checkbox {
+    position: absolute;
+    top: 41ch;
+    left: 5ch;
+    }
+    .input-other  {
+        position: absolute;
+    top: 27ch;
+    left: 8ch;
+    width: 30ch;
+    padding-bottom: 2ch;
+    border-top-right-radius: 4ch;
+    background-color: white;
+    }
+    .input-other-2 {
+    position: absolute;
+    top: 35ch;
+    left: 8ch;
+    width: 30ch;
+    padding-bottom: 2ch;
+    border-top-right-radius: 4ch;
+    background-color: white;
+    }
