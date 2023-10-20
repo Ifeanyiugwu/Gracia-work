@@ -428,4 +428,7 @@ background-color: white;
         left: 38ch;
         letter-spacing: 3px;
         font-size: 20px;
-    }
+}
+@media screen and (min-width:375px) {
+    
+}
